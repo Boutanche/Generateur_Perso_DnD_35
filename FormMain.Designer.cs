@@ -44,8 +44,19 @@
             this.button_ValiderPresentation = new System.Windows.Forms.Button();
             this.groupBox_Caractéristiques = new System.Windows.Forms.GroupBox();
             this.label_LancéD = new System.Windows.Forms.Label();
+            this.progressBar_Lancement = new System.Windows.Forms.ProgressBar();
+            this.label_FOR = new System.Windows.Forms.Label();
+            this.label_DEX = new System.Windows.Forms.Label();
+            this.label_CONS = new System.Windows.Forms.Label();
+            this.label_INT = new System.Windows.Forms.Label();
+            this.label_SAG = new System.Windows.Forms.Label();
+            this.label_CHA = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_Carac = new System.Windows.Forms.TableLayoutPanel();
+            this.label_DragTest = new System.Windows.Forms.Label();
+            this.label_testVar = new System.Windows.Forms.Label();
             this.groupBox_Intro.SuspendLayout();
             this.groupBox_Caractéristiques.SuspendLayout();
+            this.tableLayoutPanel_Carac.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Test
@@ -207,10 +218,14 @@
             // 
             // groupBox_Caractéristiques
             // 
+            this.groupBox_Caractéristiques.Controls.Add(this.label_testVar);
+            this.groupBox_Caractéristiques.Controls.Add(this.label_DragTest);
+            this.groupBox_Caractéristiques.Controls.Add(this.tableLayoutPanel_Carac);
+            this.groupBox_Caractéristiques.Controls.Add(this.progressBar_Lancement);
             this.groupBox_Caractéristiques.Controls.Add(this.label_LancéD);
             this.groupBox_Caractéristiques.Location = new System.Drawing.Point(252, 126);
             this.groupBox_Caractéristiques.Name = "groupBox_Caractéristiques";
-            this.groupBox_Caractéristiques.Size = new System.Drawing.Size(305, 404);
+            this.groupBox_Caractéristiques.Size = new System.Drawing.Size(215, 404);
             this.groupBox_Caractéristiques.TabIndex = 12;
             this.groupBox_Caractéristiques.TabStop = false;
             this.groupBox_Caractéristiques.Text = "Caractéristiques";
@@ -225,6 +240,115 @@
             this.label_LancéD.TabIndex = 0;
             this.label_LancéD.Text = "Résultats de vos lancés de dès :";
             // 
+            // progressBar_Lancement
+            // 
+            this.progressBar_Lancement.Location = new System.Drawing.Point(10, 36);
+            this.progressBar_Lancement.Name = "progressBar_Lancement";
+            this.progressBar_Lancement.Size = new System.Drawing.Size(194, 23);
+            this.progressBar_Lancement.TabIndex = 1;
+            this.progressBar_Lancement.Click += new System.EventHandler(this.progressBar_Lancement_Click);
+            // 
+            // label_FOR
+            // 
+            this.label_FOR.AutoSize = true;
+            this.label_FOR.Location = new System.Drawing.Point(3, 0);
+            this.label_FOR.Name = "label_FOR";
+            this.label_FOR.Size = new System.Drawing.Size(29, 13);
+            this.label_FOR.TabIndex = 2;
+            this.label_FOR.Text = "FOR";
+            // 
+            // label_DEX
+            // 
+            this.label_DEX.AutoSize = true;
+            this.label_DEX.Location = new System.Drawing.Point(3, 20);
+            this.label_DEX.Name = "label_DEX";
+            this.label_DEX.Size = new System.Drawing.Size(29, 13);
+            this.label_DEX.TabIndex = 3;
+            this.label_DEX.Text = "DEX";
+            // 
+            // label_CONS
+            // 
+            this.label_CONS.AutoSize = true;
+            this.label_CONS.Location = new System.Drawing.Point(3, 40);
+            this.label_CONS.Name = "label_CONS";
+            this.label_CONS.Size = new System.Drawing.Size(37, 13);
+            this.label_CONS.TabIndex = 4;
+            this.label_CONS.Text = "CONS";
+            // 
+            // label_INT
+            // 
+            this.label_INT.AutoSize = true;
+            this.label_INT.Location = new System.Drawing.Point(3, 60);
+            this.label_INT.Name = "label_INT";
+            this.label_INT.Size = new System.Drawing.Size(25, 13);
+            this.label_INT.TabIndex = 5;
+            this.label_INT.Text = "INT";
+            // 
+            // label_SAG
+            // 
+            this.label_SAG.AutoSize = true;
+            this.label_SAG.Location = new System.Drawing.Point(3, 80);
+            this.label_SAG.Name = "label_SAG";
+            this.label_SAG.Size = new System.Drawing.Size(29, 13);
+            this.label_SAG.TabIndex = 6;
+            this.label_SAG.Text = "SAG";
+            // 
+            // label_CHA
+            // 
+            this.label_CHA.AutoSize = true;
+            this.label_CHA.Location = new System.Drawing.Point(3, 100);
+            this.label_CHA.Name = "label_CHA";
+            this.label_CHA.Size = new System.Drawing.Size(29, 13);
+            this.label_CHA.TabIndex = 7;
+            this.label_CHA.Text = "CHA";
+            // 
+            // tableLayoutPanel_Carac
+            // 
+            this.tableLayoutPanel_Carac.ColumnCount = 7;
+            this.tableLayoutPanel_Carac.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Carac.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.Controls.Add(this.label_FOR, 0, 0);
+            this.tableLayoutPanel_Carac.Controls.Add(this.label_DEX, 0, 1);
+            this.tableLayoutPanel_Carac.Controls.Add(this.label_SAG, 0, 4);
+            this.tableLayoutPanel_Carac.Controls.Add(this.label_CONS, 0, 2);
+            this.tableLayoutPanel_Carac.Controls.Add(this.label_INT, 0, 3);
+            this.tableLayoutPanel_Carac.Controls.Add(this.label_CHA, 0, 5);
+            this.tableLayoutPanel_Carac.Location = new System.Drawing.Point(10, 131);
+            this.tableLayoutPanel_Carac.Name = "tableLayoutPanel_Carac";
+            this.tableLayoutPanel_Carac.RowCount = 6;
+            this.tableLayoutPanel_Carac.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_Carac.Size = new System.Drawing.Size(194, 121);
+            this.tableLayoutPanel_Carac.TabIndex = 8;
+            // 
+            // label_DragTest
+            // 
+            this.label_DragTest.AutoSize = true;
+            this.label_DragTest.Location = new System.Drawing.Point(10, 74);
+            this.label_DragTest.Name = "label_DragTest";
+            this.label_DragTest.Size = new System.Drawing.Size(79, 13);
+            this.label_DragTest.TabIndex = 9;
+            this.label_DragTest.Text = "DragetpasDrop";
+            this.label_DragTest.DragDrop += new System.Windows.Forms.DragEventHandler(this.label_DragTest_DragDrop);
+            // 
+            // label_testVar
+            // 
+            this.label_testVar.AutoSize = true;
+            this.label_testVar.Location = new System.Drawing.Point(13, 91);
+            this.label_testVar.Name = "label_testVar";
+            this.label_testVar.Size = new System.Drawing.Size(16, 13);
+            this.label_testVar.TabIndex = 10;
+            this.label_testVar.Text = "...";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,12 +359,15 @@
             this.Controls.Add(this.groupBox_Caractéristiques);
             this.Controls.Add(this.groupBox_Intro);
             this.Controls.Add(this.label_Titre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
-            this.Text = "Mon Test";
+            this.Text = "Générateur Personnage D&D 3.5";
             this.groupBox_Intro.ResumeLayout(false);
             this.groupBox_Intro.PerformLayout();
             this.groupBox_Caractéristiques.ResumeLayout(false);
             this.groupBox_Caractéristiques.PerformLayout();
+            this.tableLayoutPanel_Carac.ResumeLayout(false);
+            this.tableLayoutPanel_Carac.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,6 +390,16 @@
         private System.Windows.Forms.Button button_ValiderPresentation;
         private System.Windows.Forms.GroupBox groupBox_Caractéristiques;
         private System.Windows.Forms.Label label_LancéD;
+        private System.Windows.Forms.ProgressBar progressBar_Lancement;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Carac;
+        private System.Windows.Forms.Label label_FOR;
+        private System.Windows.Forms.Label label_DEX;
+        private System.Windows.Forms.Label label_SAG;
+        private System.Windows.Forms.Label label_CONS;
+        private System.Windows.Forms.Label label_INT;
+        private System.Windows.Forms.Label label_CHA;
+        private System.Windows.Forms.Label label_DragTest;
+        private System.Windows.Forms.Label label_testVar;
     }
 }
 
