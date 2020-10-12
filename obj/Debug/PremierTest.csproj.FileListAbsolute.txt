@@ -1,0 +1,10 @@
+E:\C#\TP\PremierTest\bin\Debug\PremierTest.exe.config
+E:\C#\TP\PremierTest\bin\Debug\PremierTest.exe
+E:\C#\TP\PremierTest\bin\Debug\PremierTest.pdb
+E:\C#\TP\PremierTest\obj\Debug\PremierTest.csprojAssemblyReference.cache
+E:\C#\TP\PremierTest\obj\Debug\PremierTest.FormMain.resources
+E:\C#\TP\PremierTest\obj\Debug\PremierTest.Properties.Resources.resources
+E:\C#\TP\PremierTest\obj\Debug\PremierTest.csproj.GenerateResource.cache
+E:\C#\TP\PremierTest\obj\Debug\PremierTest.csproj.CoreCompileInputs.cache
+E:\C#\TP\PremierTest\obj\Debug\PremierTest.exe
+E:\C#\TP\PremierTest\obj\Debug\PremierTest.pdb
